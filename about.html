@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="style1.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-gap: 20px;
+            padding: 20px;
+        }
+        .about-section {
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .about-section h2 {
+            margin-top: 0;
+        }
+        .about-section p {
+            margin-bottom: 0;
+        }
+
+        
+        .container {
+            display: grid;
+            grid-template-areas: 
+                "header"
+                "story mission"
+                "team values";
+            grid-template-columns: 1fr;
+            grid-gap: 20px;
+            padding: 20px;
+        }
+
+        .about-section {
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .about-section h2 {
+            margin-top: 0;
+        }
+
+        .about-section p {
+            margin-bottom: 0;
+        }
+
+        header {
+            grid-area: header;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .about-section:nth-child(1) {
+            grid-area: story;
+        }
+
+        .about-section:nth-child(2) {
+            grid-area: mission;
+        }
+
+        .about-section:nth-child(3) {
+            grid-area: team;
+        }
+
+        .about-section:nth-child(4) {
+            grid-area: values;
+        }
+    </style>
+
+    <style lang="scss">
+         
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            display: grid;
+            grid-template-areas:
+                "header"
+                "story"
+                "mission"
+                "team"
+                "values";
+            grid-template-columns: 1fr;
+            grid-gap: 20px;
+            padding: 20px;
+
+            @media screen and (min-width: 768px) {
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            }
+        }
+
+        header {
+            grid-area: header;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .about-section {
+            border: 1px solid #6c757d;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: lighten(#6c757d, 20%);
+            color:#333;
+        }
+
+        .about-section h2 {
+            margin-top: 0;
+        }
+
+        .about-section p {
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>About Us</h1>
+    </header>
+    <div class="container">
+        <div class="about-section">
+            <h2>Our Story</h2>
+        </div>
+        <div class="about-section">
+            <h2>Our Mission</h2>
+            
+        </div>
+        <div class="about-section">
+            <h2>Our Team</h2>
+            
+        </div>
+        <div class="about-section">
+            <h2>Our Values</h2>
+           
+        </div>
+    </div>
+</body>
+</html>
