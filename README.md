@@ -1,6 +1,6 @@
 Website README
 
-This repository contains the source code for a personal website created by Niroj Acharya. The website serves as a platform for Niroj to showcase his skills, projects, and professional experience. Below is an overview of the contents of this repository:
+
 Files and Directories
 
     index.html: This file represents the homepage of the website.
